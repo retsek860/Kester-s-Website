@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>This is Kester's website</title>
-    </head>
-    <body>
-    This is the body of the website
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<script src="script.js" type="text/javascript"></script>
+
+<form method="post" onsubmit="addTask(); return false">
+    Enter task: <input id="taskInput" type="text">
+    <input type="submit" value="Add task">
+</form> 
+<table id="list" style="width:90%;
+                        background-color: white;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-style: dotted;">
+    <tr>
+        <th width="50%">Task</th>
+        <th width="30%">Time Added</th>
+        <th width="20%">Completed?</th>
+    </tr>
+</table>
+
+</body>
 </html>
